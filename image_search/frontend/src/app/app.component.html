@@ -1,0 +1,22 @@
+<div class="container">
+  <form enctype="multipart/form-data">
+  <div class="row">
+    <div class="col-md-6 m-auto">
+      <h1 class="text-center display-4 my-4">Image Search</h1>
+        <div class="custom-file mb-3">
+          <input type="file" name="image" id="file" accept="image/*" class="custom-file-input">
+          <label for="file" class="custom-file-label">Choose File</label>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="custom-file mb-3">
+    <div class="col-md-6 m-auto">
+      <input type="button" value="Upload" (click)="upload()" class="btn btn-primary btn-block">
+      <input type="button" value="Search" class="btn btn-primary btn-block">
+    </div>
+    </div>
+  </div>
+</form>
+</div>
+<router-outlet></router-outlet>
